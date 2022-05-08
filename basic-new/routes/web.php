@@ -22,4 +22,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::resource('posts', App\Http\Controllers\Backend\PostController::class)
 ->middleware('auth')
-->except('show');
+->except('show');  //indica que no utilizare la ruta show de mi controllador
+
